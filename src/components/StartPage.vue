@@ -24,7 +24,7 @@ export default {
 
     onAllowPosition(position) {
       axios
-          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=c2b8fe3a4f8379cd4229b4dc6b646abf&units=metric`)
+          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=YourApiKey&units=metric`)
           .then(response => {
 
             const respData = response.data

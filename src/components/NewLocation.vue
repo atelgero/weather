@@ -40,7 +40,7 @@ export default {
       }
 
       axios
-          .get(`https://api.openweathermap.org/geo/1.0/direct?q==${this.newCity}&APPID=c2b8fe3a4f8379cd4229b4dc6b646abf&limit=1`)
+          .get(`https://api.openweathermap.org/geo/1.0/direct?q==${this.newCity}&APPID=YourApiKey&limit=1`)
           .then(response => {
             const respData = response.data[0]
             if (!respData) {

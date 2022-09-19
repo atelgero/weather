@@ -64,7 +64,7 @@ export default {
   methods: {
     getWeather: function (lat, lon) {
       axios
-          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=c2b8fe3a4f8379cd4229b4dc6b646abf&units=metric`)
+          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=YourApiKey&units=metric`)
           .then(response => {
             // noinspection JSUnresolvedVariable
             this.details = {
